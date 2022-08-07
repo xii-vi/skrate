@@ -14,12 +14,12 @@ export const NavbarHomepage = () => {
     }
   };
   return (
-    <nav className="flex justify-between">
+    <nav className="flex sm:justify-between ">
       <img className="w-20 h-20 lg:w-24 lg:h-24" src={logo} alt="logo" />
-      <div className="flex justify-center items-center px-6">
-        <div className="mr-16">
+      <div className="flex justify-center items-center px-3 md:px-6 mx-auto sm:mx-0">
+        <div className="mr-4 sm:mr-8 md:mr-16">
           <button
-            className="w-full bg-[#4F65F6] px-4 py-1 text-white rounded-sm"
+            className="w-full text-xs sm:text-base bg-[#4F65F6] px-1 md:px-4 py-1 text-white rounded-sm"
             onClick={logOutHandler}
           >
             Sign Out
@@ -32,7 +32,7 @@ export const NavbarHomepage = () => {
             alt="userAvatar"
             onClick={resetDashboard}
           />
-          <p className="text-lg ml-5">{userData.full_name}</p>
+          <p className="text-xs sm:text-lg ml-5">{userData.full_name}</p>
         </div>
       </div>
     </nav>

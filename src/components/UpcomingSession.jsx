@@ -13,16 +13,16 @@ export const UpcomingSession = () => {
               src="https://re-ui.netlify.app/assets/avatar/avatar-1.png"
               alt="userAvatar"
             />
-            <div>
-              <div className="text-lg underline font-bold underline-offset-2">
+            <div className="m-2">
+              <div className="text-lg underline font-bold underline-offset-2 m-1">
                 {item.mentor_name}
               </div>
-              <div className="text-sm font-serif no-underline pt-2">
+              <div className="text-sm font-serif no-underline pt-2 mx-1 ">
                 {item.timings}
               </div>
             </div>
 
-            <div>{item.date}</div>
+            <div className="mx-1">{item.date}</div>
             <div className="py-2 px-4 bg-blue-200 w-28 text-center">
               {item.session_type}
             </div>

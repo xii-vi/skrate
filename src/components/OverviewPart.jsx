@@ -5,7 +5,7 @@ export const Overview = () => {
   return (
     <div className="border outline-2 m-2 p-2 px-6">
       <p className="text-2xl font-medium py-2">Overview</p>
-      <div className="grid grid-cols-2 grid-rows-2 gap-4 justify-center">
+      <div className="grid grid-cols-1 grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 gap-2 sm:gap-4 justify-center">
         <div className="p-4 bg-[#F6F7FF] border outline-2 rounded-lg font-semibold flex items-center">
           Profile Views{" "}
           <span className="text-[#4F65F6] text-3xl font-medium ml-2">

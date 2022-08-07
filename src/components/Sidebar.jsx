@@ -24,8 +24,8 @@ export const Sidebar = () => {
     });
   };
   return (
-    <div className="flex flex-col mx-8">
-      <div className="flex my-5 cursor-pointer">
+    <div className="flex fixed bottom-0 mx-0 bg-slate-100 w-screen lg:flex-col sm:mx-8 sm:static sm:bg-transparent justify-around sm:justify-center items-center lg:justify-start lg:items-start sm:w-auto">
+      <div className="flex my-5 cursor-pointer hover:underline">
         <span className="pr-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export const Sidebar = () => {
         </span>
         Home
       </div>
-      <div className="flex cursor-pointer" onClick={shuffleHandler}>
+      <div className="flex cursor-pointer px-4 lg:px-0 hover:underline" onClick={shuffleHandler}>
         <span className="pr-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
